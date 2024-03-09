@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expanding Text Section</title>
+<style>
+  .text-section {
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: height 2s ease;
+    overflow: hidden;
+  }
+
+  .text-section:hover {
+    height: auto; /* Expand to fit content */
+  }
+
+  .extra-info {
+    display: none; /* Initially hidden */
+  }
+
+  .text-section:hover .extra-info {
+    display: block; /* Show on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="text-section">
+  <p>Main Information</p>
+  <div class="extra-info">
+    <p>Additional Information 1</p>
+    <p>Additional Information 2</p>
+    <p>Additional Information 3</p>
+  </div>
+</div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Line Animation on Click</title>
+<style>
+  .line-container {
+    position: relative;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .line-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    animation: animateLine 2s forwards; /* Animation duration and fill mode */
+  }
+
+  @keyframes animateLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="line-container">
+  <div class="line-animation"></div>
+</div>
+
+</body>
+</html>
